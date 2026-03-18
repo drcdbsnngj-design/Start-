@@ -1,0 +1,11 @@
+price = int(input("Enter Price in USD: "))  
+tax = price * 0.05                        
+total_usd = price + tax                     
+iqd_total = total_usd * 1500               
+print(f"Total Price: {iqd_total:,} IQD") 
+if iqd_total >= 1000000:
+    print("مبروك حصلت على سماعة!")
+elif iqd_total >= 500000:
+    print("مبروك حصلت على كفر شاشة!")
+else:
+    print("نتمنى لك يوماً سعيداً")
